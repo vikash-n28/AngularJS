@@ -1,6 +1,7 @@
-angular.module('myAPp').controller('fetchCtrl', function($scope, service) {
+angular.module('myAPp').controller('fetchCtrl', function($scope, myService) {
        $scope.getAllData = function() {
-           $scope.Details =service.getAllData;
+           debugger;
+           $scope.Details =service1.getAllData;
        }
     // $http.get("")
     // .success(function(response) {$scope.names = response;});

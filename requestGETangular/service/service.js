@@ -1,8 +1,11 @@
-angular.module('myAPp').factory('service', function($scope,$http) {
+angular.module('myAPp',[]).factory('myService', function($scope,$http) {
+    // debugger;
     var service ={};
-    service.getAllData = function () {
+    service1.getAllData = function () {
+        // debugger;
         $http.get("products.json")
         .success(function(data,status,header, config) {
+            debugger;
             console.log(data);
             return data;
         }) 
