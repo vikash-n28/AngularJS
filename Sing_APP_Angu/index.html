@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<title>MoBAPp</title>
+	<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+	<header>
+		<h1><a href="#index.html">moBAPp</a></h1>
+	</header>
+	<div class="main-content">
+		<div ui-view></div>
+	</div>
+</body>
+<script src="services/fireBase-serv.js"></script>
+<script src="js/retirveData.js"></script>
+<script src="js/productdis.js"></script>
+<script src="js/config.js"></script>
+<script src="app.js"></script>
+
+</html>

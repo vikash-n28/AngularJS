@@ -1,0 +1,43 @@
+<div class="all-products page">
+    <div class="filters">
+        <div class="filter-criteria">
+            <span>Manufacturer</span>
+            <div ng-repeat="m in manufacturerGroup">
+                <label><input type="checkbox" name="manufacturer"  ng-model="usemanufact[m]">{{m}}</label>
+            </div>
+        </div>
+        <div class="filter-criteria">
+            <span>Screen Size</span>
+            <div ng-repeat="m in storageGroup">
+                <label><input type="checkbox" name="storage" ng-model="usestorage[m]">{{m}} GB</label>
+            </div>
+        </div>
+        <div class="filter-criteria">
+            <span>OS</span>
+            <div ng-repeat="m in osGroup">
+                <label><input type="checkbox" name="os" ng-model="useos[m]">{{m}}</label>
+            </div>
+        </div>
+        <div class="filter-criteria">
+            <span>Camera</span>
+            <div ng-repeat="m in cameraGroup">
+                <label><input type="checkbox" name="camera" ng-model="usecamera[m]">{{m}}Mpx</label>
+            </div>
+        </div>
+    </div>
+    <ul class="products-list">
+        <li data-index="{{x.id}}" ng-repeat="x in product | filter:filterObj">
+            <a href="#" class="product-photo"><img ng-src="{{x.image.small}}" height="130" alt="{{x.name}}" /></a>
+            <h2> {{x.name}} </h2>
+            <ul class="product-description">
+                <li><span>Manufacturer: </span>{{x.specs.manufacturer}}</li>
+                <li><span>Storage: </span>{{x.specs.storage}} GB</li>
+                <li><span>OS: </span>{{x.specs.os}}</li>
+                <li><span>Camera: </span>{{x.specs.camera}} Mpx</li>
+            </ul>
+            <button>Buy Now!</button>
+            <p class="product-price">{{x.price}}$</p>
+            <div class="highlight"></div>
+        </li>
+    </ul>
+</div>

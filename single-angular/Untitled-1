@@ -1,0 +1,3 @@
+$filter(‘filter’)(myObjects, function (o) {
+return o.color == “red” || o.color == “indigo”;
+});
