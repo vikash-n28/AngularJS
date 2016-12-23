@@ -1,0 +1,24 @@
+{
+  "name": "angularjs",
+  "homepage": "https://github.com/vikashprasad2810/AngularJS",
+  "authors": [
+    "vikashprasad2810 <vikashprasad2810@gmail.com>"
+  ],
+  "description": "satellizer",
+  "main": "",
+  "keywords": [
+    "satellizer"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "satellizer": "^0.15.5"
+  }
+}
